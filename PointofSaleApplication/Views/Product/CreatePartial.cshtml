@@ -1,0 +1,60 @@
+﻿@model PointofSaleApplication.Model.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+<div class=" container">
+    <div class="row">
+        <div class="text-center">
+            <h2>Create Product</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-10">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4></h4>
+                    <hr />
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Name)
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.UnitPrice, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.UnitPrice)
+                            @Html.ValidationMessageFor(model => model.UnitPrice)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-3">
+                            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-danger" })
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+           
+
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

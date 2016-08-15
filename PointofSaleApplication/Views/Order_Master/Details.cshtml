@@ -1,0 +1,50 @@
+﻿@model PointofSaleApplication.Model.OrderMaster
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderMaster</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatiomTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatiomTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Synchronized)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Synchronized)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

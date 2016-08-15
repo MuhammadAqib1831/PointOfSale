@@ -1,0 +1,51 @@
+﻿
+<nav class="text-right">
+    <ul class="pagination pagination-sm">
+        @if ((int)ViewBag.Page - 1 > 0)
+        {
+            <li>
+                <a href="@Url.Action("Index", new { pageNo = (int)ViewBag.Page - 1, ItemsPerPage = ViewBag.ItemsPerPage })" aria-label="Previous">
+                    <span aria-hidden="true">Previous</span>
+                </a>
+            </li>
+        }
+        else
+        {
+            <li class="disabled">
+                <a href="#" class="disabled" aria-label="Previous">
+                    <span aria-hidden="true">Previous</span> @*«*@
+                </a>
+            </li>
+        }
+
+        @for (int i = 1; i < Math.Ceiling(((double)ViewBag.Count / (double)ViewBag.ItemsPerPage)) + 1; i++)
+        {
+            if (i == ViewBag.Page)
+            {
+                <li class="active">@Html.ActionLink(i.ToString(), "Index", new { pageNo = i, ItemsPerPage = ViewBag.ItemsPerPage }) </li>
+            }
+            else
+            {
+                <li>@Html.ActionLink(i.ToString(), "Index", new { pageNo = i, ItemsPerPage = ViewBag.ItemsPerPage }) </li>
+            }
+
+        }
+
+        @if (ViewBag.Page * ViewBag.ItemsPerPage < ViewBag.Count)
+        {
+            <li>
+                <a href="@Url.Action("Index", new { pageNo = ViewBag.Page + 1, ItemsPerPage = ViewBag.ItemsPerPage })" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+        }
+        else
+        {
+            <li class="disabled">
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">Next</span> @*»*@
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

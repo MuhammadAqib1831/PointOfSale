@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UG-IIUI</title>
+    @Styles.Render("~/Content/css")
+    <!-- ========== Css Files ========== -->
+    @*<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body style="background: #F5F5F5;">
+
+    <div id="top" class="clearfix">
+        <div class="applogo col-sm-2">
+            @Html.ActionLink("UG-IIUI", "Index", "Home", null, new { @class = "logo" })
+        </div>
+
+        <div class="col-sm-6">
+            <ul style="margin-left:20px;" class="topmenu">
+                <li>@Html.ActionLink("Questions", "Index", "Question")</li>
+                <li>@Html.ActionLink("Departments", "Index", "Department")</li>
+                <li>@Html.ActionLink("Faculties", "Index", "Faculty")</li>
+                <li>@Html.ActionLink("Groups", "Index", "Group")</li>
+                <li>@Html.ActionLink("Sessions", "Index", "Session")</li>
+                <li>@Html.ActionLink("Sections", "Index", "Section")</li>
+                <li>@Html.ActionLink("Categories", "Index", "Category")</li>
+                <li>@Html.ActionLink("Sub Categories", "Index", "SubCategory")</li>
+            </ul>
+        </div>
+        @Html.Partial("_LoginPartial")
+
+    </div>
+
+    <div class="container">
+        @RenderBody()
+
+
+        <hr />
+    </div>
+
+    <footer>
+
+        @*<ul>
+                <li>
+                    <p class="home">Home</p>
+                    <a class="logo" href="#">Company Name <i>© 2013</i></a>
+                </li>
+                <li>
+                    <p class="services">Services</p>
+
+                    <ul>
+                        <li><a href="#">3D modeling</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Mobile development</a></li>
+                        <li><a href="#">Web &amp; Print Design</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="reachus">Reach us</p>
+
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li>555-123456789</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="clients">Clients</p>
+
+                    <ul>
+                        <li><a href="#">Login Area</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>*@
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+
+    @section Scripts{
+        <script>
+
+            // set up our data series with 50 random data points
+
+            var seriesData = [[], [], []];
+            var random = new Rickshaw.Fixtures.RandomData(20);
+
+            for (var i = 0; i < 110; i++) {
+                random.addData(seriesData);
+            }
+
+            // instantiate our graph!
+
+            var graph = new Rickshaw.Graph({
+                element: document.getElementById("todaysales"),
+                renderer: 'bar',
+                series: [
+                  {
+                      color: "#33577B",
+                      data: seriesData[0],
+                      name: 'Photodune'
+                  }, {
+                      color: "#77BBFF",
+                      data: seriesData[1],
+                      name: 'Themeforest'
+                  }, {
+                      color: "#C1E0FF",
+                      data: seriesData[2],
+                      name: 'Codecanyon'
+                  }
+                ]
+            });
+
+            graph.render();
+
+            var hoverDetail = new Rickshaw.Graph.HoverDetail({
+                graph: graph,
+                formatter: function (series, x, y) {
+                    var date = '<span class="date">' + new Date(x * 1000).toUTCString() + '</span>';
+                    var swatch = '<span class="detail_swatch" style="background-color: ' + series.color + '"></span>';
+                    var content = swatch + series.name + ": " + parseInt(y) + '<br>' + date;
+                    return content;
+                }
+            });
+
+        </script>
+        <!-- Today Activity -->
+    }
+
+</body>
+</html>

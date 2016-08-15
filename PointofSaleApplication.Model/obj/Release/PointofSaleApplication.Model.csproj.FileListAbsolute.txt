@@ -1,0 +1,13 @@
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\PointofSaleApplication.Model.dll.config
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\PointofSaleApplication.Model.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\PointofSaleApplication.Model.pdb
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\EntityFramework.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\EntityFramework.SqlServer.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\EntityFramework.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\EntityFramework.SqlServer.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\obj\Release\PointofSaleApplication.Model.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Model\obj\Release\PointofSaleApplication.Model.pdb

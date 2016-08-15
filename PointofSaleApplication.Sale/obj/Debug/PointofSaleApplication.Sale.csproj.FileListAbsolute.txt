@@ -1,0 +1,54 @@
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.exe.config
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.exe
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.pdb
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Data.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Model.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Data.pdb
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Model.pdb
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.xml
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.csprojResolveAssemblyReference.cache
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\MainWindow.baml
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\MainWindow.g.cs
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\App.g.cs
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale_MarkupCompile.cache
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.g.resources
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.Properties.Resources.resources
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.csproj.GenerateResource.Cache
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.exe
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.pdb
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\UCSaleOrder.baml
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\UCSaleOrder.g.cs
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Muhammad Aqib\documents\visual studio 2013\Projects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.SqlServer.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.exe.config
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.exe
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.pdb
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.exe
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Sale.pdb
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.SqlServer.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Data.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Model.dll
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Data.pdb
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\PointofSaleApplication.Model.pdb
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\EntityFramework.SqlServer.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.csprojResolveAssemblyReference.cache
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\MainWindow.baml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\UCSaleOrder.baml
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\MainWindow.g.cs
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\UCSaleOrder.g.cs
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\App.g.cs
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale_MarkupCompile.cache
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.g.resources
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.Properties.Resources.resources
+E:\VisualStudioProjects\PointofSaleApplication\PointofSaleApplication.Sale\obj\Debug\PointofSaleApplication.Sale.csproj.GenerateResource.Cache

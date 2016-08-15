@@ -1,0 +1,315 @@
+﻿@model IEnumerable<PointofSaleApplication.Model.Product>
+
+<style type="text/css">
+    .webgrid-table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        width: 100%;
+        display: table;
+        border-collapse: separate;
+        border: solid 1px #98BF21;
+        background-color: white;
+    }
+
+        .webgrid-table td, th {
+            border: 1px solid #98BF21;
+            padding: 3px 7px 2px;
+        }
+
+    .webgrid-header {
+        background-color: #A7C942;
+        color: #FFFFFF;
+        padding-bottom: 4px;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    .webgrid-footer {
+    }
+
+    .webgrid-row-style {
+        padding: 3px 7px 2px;
+    }
+
+    .webgrid-alternating-row {
+        background-color: #EAF2D3;
+        padding: 3px 7px 2px;
+    }
+</style>
+
+
+
+
+@{
+    ViewBag.Title = "Index";
+    var grid = new WebGrid(Model,rowsPerPage:5);
+    grid.Pager(WebGridPagerModes.All);
+}
+
+<h2>Index</h2>
+<div class="container-fluid">
+    @*<d@*iv class="row">
+        <div class="col-lg-4">
+    <img class="img-thumbnail img-responsive" src="~/Images/images.png" alt="" />*@
+        </div><div class="col-lg-12">
+        <img class="img-thumbnail img-responsive" src="~/Images/brand.png" alt="" style="width:auto" />
+       </div>
+        @*<div class="col-lg-4">
+            <img class="img-thumbnail img-responsive" src="~/Images/brandd.jpg" alt="" />
+        </div></div>*@
+</div>
+@*<div id="createGroup" class="jumbotron ">
+    <div class="col-12 text-center" >
+        @*<img src="~/Images/images.png" />*@
+      @*<h1>  Point of Sale (POS)</h1>*@
+    @*@Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })*@
+   
+@*</div>*@
+<div class="text-center">
+    <a href="#" class="Create btn btn-success" title="/product/create">Create</a> 
+</div>
+<div class="container-fluid">
+    <div class=" row-fluid">
+        <div class="col-xs-1"></div>
+        <div class="well col-xs-10" id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+            grid.Column(columnName: "ID", header: "ID", format: @<text>@item.Id</text>),
+            grid.Column(columnName: "Name", header: "Name", format: @<text>@item.Name</text>),
+            grid.Column(columnName: "UnitPrice", header: "UnitPrice", format: @<text>@item.UnitPrice</text> ),
+            grid.Column(columnName: "Updated", header: "Updated", format: @<text>@item.Updated</text>),
+            grid.Column("Action",format:@<text>
+                                 @*<button class="btn btn-primary" id="anchorEdit" data-id="@item.Id" >Edit</button>*@
+                                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class ="anchorDetail"}) |*@
+                               <a href="#"  class="Edit btn btn-primary"  data-id="@item.Id" title="/product/edit">Edit</a> |
+                               <a href="#" class="Details btn btn-info"  data-id="@item.Id"    title="/product/details">Detail</a>|
+                               <a href="#" class="Delete btn btn-danger"  data-id="@item.Id"   title="/product/delete">Delete</a> 
+                                  @*<button class="btn btn-info" >Detail</button>*@
+                                  @*<button class="btn btn-danger" >Delete</button>*@
+                                    </text>)
+                     ))
+        </div>
+        <div id='myModal' class='modal'>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id='myModalContent'></div>
+                </div>
+            </div>
+
+        </div>  
+        @*<div class="col-xs-7">
+           
+            @*<table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UnitPrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Updated)
+                    </th>
+                    <th></th>
+                </tr>*@
+
+                @*@foreach (var item in Model)
+                {
+                    <tr id="Edit@(item.Id)">
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UnitPrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Updated)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" }) |
+                            Ajax.ActionLink("Edit", "Edit", new { id = item.Id }, new AjaxOptions { UpdateTargetId = "Edit" + item.Id, InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnBegin = "editBegin", OnComplete = "editSuccess" }, new { @class = "btn btn-primary btn-xs" }) |*@*
+                            @*Html.ActionLink("Details", "Details", new { id = item.Id }, new {@class="btn btn-info" }) |*@
+                            @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new {@class="btn btn-danger" })*@
+                        @*</td>*@
+                    @*</tr>*@
+                @*}
+
+
+            </table>*@*@*@*@
+        @*</div>*@
+    </div>
+</div>
+@section Scripts{
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script> 
+    <script src="~/Scripts/bootstrap.min.js"></script>
+<script>
+    function editSuccess() {
+        //$("td").hide();
+        //alert("Successful")
+        //$(this).parent().prev("td").css("class", "col-md-10");
+        //
+
+        $(this).parent().prev("td").attr("colspan", 2);
+        //$('#facultyDelete').modal('toggle');
+
+    }
+
+    function editBegin() {
+        //alert(this);
+        //$(this).parent().prev("td").css("colspan", "2");
+        $(this).parent().hide();
+    }
+
+
+    $("table tr th").css("background", "#E3F2FD");
+    //$("table tr:even td").css("background", "#FCE4EC");
+
+    //$("table tr:odd td").css("background", "#E3F2FD");
+    //$("table tr:even td").css("background", "#FCE4EC");
+    /////////////////////////////
+  // var TeamDetailPostBackURL = '/product/Edit';
+    $(function () {
+        $(".Edit").click(function () {
+         
+            debugger;
+            var $buttonClicked = $(this);
+            var id = $buttonClicked.attr('data-id');
+            var urldemo = $buttonClicked.attr('title');
+            var options = { "backdrop": "static", keyboard: true };
+            $.ajax({
+                type: "GET",
+                url: urldemo,
+                contentType: "application/json; charset=utf-8",
+                data: { "Id": id },
+                datatype: "json",
+                success: function (data) {
+                    debugger;
+                    $('#myModalContent').html(data);
+                    $('#myModal').modal(options);
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Dynamic content load failed.");
+                }
+            });
+        });
+        //$("#closebtn").on('click',function(){  
+        //    $('#myModal').modal('hide');    
+
+        $("#closbtn").click(function () {
+            $('#myModal').modal('hide');
+        });
+    });
+    $(function () {
+        $(".Details").click(function () {
+
+            debugger;
+            var $buttonClicked = $(this);
+            var id = $buttonClicked.attr('data-id');
+            var urldemo = $buttonClicked.attr('title');
+            var options = { "backdrop": "static", keyboard: true };
+            $.ajax({
+                type: "GET",
+                url: urldemo,
+                contentType: "application/json; charset=utf-8",
+                data: { "Id": id },
+                datatype: "json",
+                success: function (data) {
+                    debugger;
+                    $('#myModalContent').html(data);
+                    $('#myModal').modal(options);
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Dynamic content load failed.");
+                }
+            });
+        });
+        //$("#closebtn").on('click',function(){  
+        //    $('#myModal').modal('hide');    
+
+        $("#closbtn").click(function () {
+            $('#myModal').modal('hide');
+        });
+    });
+    $(function () {
+        $(".Delete").click(function () {
+
+            debugger;
+            var $buttonClicked = $(this);
+            var id = $buttonClicked.attr('data-id');
+            var urldemo = $buttonClicked.attr('title');
+            var options = { "backdrop": "static", keyboard: true };
+            $.ajax({
+                type: "GET",
+                url: urldemo,
+                contentType: "application/json; charset=utf-8",
+                data: { "Id": id },
+                datatype: "json",
+                success: function (data) {
+                    debugger;
+                    $('#myModalContent').html(data);
+                    $('#myModal').modal(options);
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Dynamic content load failed.");
+                }
+            });
+        });
+        //$("#closebtn").on('click',function(){  
+        //    $('#myModal').modal('hide');    
+
+        $("#closbtn").click(function () {
+            $('#myModal').modal('hide');
+        });
+    });
+    $(function () {
+        $(".Create").click(function () {
+
+            debugger;
+            var $buttonClicked = $(this);
+            var urldemo = $buttonClicked.attr('title');
+            var options = { "backdrop": "static", keyboard: true };
+            $.ajax({
+                type: "GET",
+                url: urldemo,
+                contentType: "application/json; charset=utf-8",
+                datatype: "json",
+                success: function (data) {
+                    debugger;
+                    $('#myModalContent').html(data);
+                    $('#myModal').modal(options);
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Dynamic content load failed.");
+                }
+            });
+        });
+        //$("#closebtn").on('click',function(){  
+        //    $('#myModal').modal('hide');    
+
+        $("#closbtn").click(function () {
+            $('#myModal').modal('hide');
+        });
+    });
+</script>
+
+    }

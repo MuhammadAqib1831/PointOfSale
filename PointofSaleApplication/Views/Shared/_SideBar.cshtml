@@ -1,0 +1,104 @@
+﻿
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START SIDEBAR -->
+<div class="sidebar clearfix">
+    <ul class="sidebar-panel nav">
+        <li class="sidetitle">Admin Tasks</li>
+        <li><a href="@Url.Action("Index", "Home")"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span class="label label-default">2</span></a></li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-bank"></i></span>Faculties<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Faculty")</li>
+                <li>@Html.ActionLink("Update", "Index", "Faculty")</li>
+                <li>@Html.ActionLink("List All", "Index", "Faculty")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Faculty")</li>
+
+
+                @*<li><a href="icons.html">Create</a></li>
+                    <li><a href="tabs.html">Update</a></li>
+                    <li><a href="buttons.html">List All</a></li>
+                    <li><a href="panels.html">Delete</a></li>*@
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-institution"></i></span>Departments<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Department")</li>
+                <li>@Html.ActionLink("Update", "Index", "Department")</li>
+                <li>@Html.ActionLink("List All", "Index", "Department")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Department")</li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-question-circle"></i></span>Questions<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Question")</li>
+                <li>@Html.ActionLink("Update", "Index", "Question")</li>
+                <li>@Html.ActionLink("List All", "Index", "Question")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Question")</li>
+            </ul>
+        </li>
+        <li>
+            <a href="@Url.Action("Index", "Section")"><span class="icon color7"><i class="fa fa-bars"></i></span>Sections@*<span class="caret"></span>*@</a>
+            @*<ul>
+                <li>@Html.ActionLink("Create", "Create", "Section")</li>
+                <li>@Html.ActionLink("Update", "Index", "Section")</li>
+                <li>@Html.ActionLink("List All", "Index", "Section")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Section")</li>
+            </ul>*@
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-laptop"></i></span>Categories<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Category")</li>
+                <li>@Html.ActionLink("Update", "Index", "Category")</li>
+                <li>@Html.ActionLink("List All", "Index", "Category")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Category")</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-tasks"></i></span>Sub Categories<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "SubCategory")</li>
+                <li>@Html.ActionLink("Update", "Index", "SubCategory")</li>
+                <li>@Html.ActionLink("List All", "Index", "SubCategory")</li>
+                <li>@Html.ActionLink("Delete", "Index", "SubCategory")</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-group"></i></span>Groups<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Group")</li>
+                <li>@Html.ActionLink("Update", "Index", "Group")</li>
+                <li>@Html.ActionLink("List All", "Index", "Group")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Group")</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-line-chart"></i></span>Sessions<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("Create", "Create", "Session")</li>
+                <li>@Html.ActionLink("Update", "Index", "Session")</li>
+                <li>@Html.ActionLink("List All", "Index", "Session")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Session")</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="icon color7"><i class="fa fa-group"></i></span>Students<span class="caret"></span></a>
+            <ul>
+                <li>@Html.ActionLink("List All", "Create", "Student")</li>
+                <li>@Html.ActionLink("Delete", "Index", "Student")</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="sidebar-panel nav">
+        <li class="sidetitle">MORE</li>
+        <li><a href="#"><span class="icon color15"><i class="fa fa-file-text"></i></span>Results</a></li>
+        <li><a href="#"><span class="icon color7"><i class="fa fa-pencil"></i></span>Test</a></li>
+        <li><a href="#"><span class="icon color12"><i class="fa fa-calendar"></i></span>Dates</a></li>
+    </ul>
+</div>
+<!-- END SIDEBAR -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
